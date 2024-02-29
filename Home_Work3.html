@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My site</title>
+  <style>
+    /* Робоче посилання "Перейти до основного змісту" на кожну сторінку */
+    #main-link {
+      display: block;
+      margin-top: 20px;
+      /* Просто для кращого вигляду */
+    }
+
+    /* Закоментуємо існуючий стиль для елемента li */
+    /* li {
+            list-style-type: none;
+        } */
+
+    /* Змінимо елемент nav на inline-блок і зробимо його ширину близько 80% */
+    nav {
+      display: inline-block;
+      width: 80%;
+    }
+
+    /* Стилізація зображень в навігаторі */
+    nav img {
+      width: 10%;
+    }
+
+    /* Змінимо стиль класу grid на двоколонкову сітку */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 40%);
+    }
+
+    /* Стилізація зображень у класі grid до ширини 100% */
+    .grid img {
+      width: 100%;
+    }
+
+    /* Налаштуємо клас grid */
+    .grid {
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 20px;
+      /* Просто для кращого вигляду */
+    }
+
+    /* Стилізація класу flex для використання flex */
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome my site </h1>
+  </header>
+  <main id="main">
+    <h2>Our service</h2>
+    <ul>
+      <li>Web development</li>
+      <li>Interface design</li>
+      <li>Website optimization</li>
+    </ul>
+    <h2>Our photo</h2>
+    <img src="image1.jpg" alt="Зображення 1">
+    <img src="image2.jpg" alt="Зображення 2">
+    <img src="image3.jpg" alt="Зображення 3">
+  </main>
+
+  <footer>
+    <p>Visit our <a href="https://github.com/Kiraneokub5">Web-develop</a> for more information.</p>
+  </footer>
+
+  <!-- Робоче посилання "Перейти до основного змісту" -->
+  <a href="#main" id="main-link">Перейти до основного змісту</a>
+</body>
+
+</html>
